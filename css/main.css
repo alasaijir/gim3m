@@ -1,0 +1,247 @@
+body {
+	background-color: #000;
+	margin: 0;
+}
+
+header {
+	width: 100%;
+	height: 10vh;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#logo {
+	height: 10vh;
+}
+
+.cen1080 {
+	width: 1080px;
+	display: flex;
+	justify-content: space-around;
+}
+
+#logoTxt {
+	font-family: 'PT Sans';
+	letter-spacing: 2px;
+}
+
+nav {
+	height: 75px;
+	background-color: #400000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+#navbar {
+	width: 1080px;
+	margin: 0;
+	padding: 0;
+	list-style-type:none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#navbar > li {
+	height: 75px;
+	width: 270px;
+	color: white;
+	font-family: Rubik;
+	padding-right: 20px;
+	padding-left: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 1px;
+	transition: all 0.175s ease-in-out;
+}
+
+#docul{
+	position: absolute;
+	width: 270px;
+	margin: 0;
+	padding: 0;
+	z-index: -1;
+	margin-top: -33px;
+	list-style-type:none;
+	transition: all 0.175s ease-in-out;
+	background-color: rgba(255,255,255);
+	border-radius: 0px 0px 5px 5px;
+	opacity: 0.5;
+}
+
+#docul>li{
+	transition: all 0.175s ease-in-out;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+
+#docul>li>a{
+	color: #000;
+	text-decoration: none;
+	font-family: 'PT Sans';
+	font-size: 15px;
+	font-weight: 900;
+
+}
+
+#docul>li:hover{
+	transform: scale(1.05) translateY(1px);
+	
+}
+
+#doculli3, #docul4li3 {
+	padding-bottom: 10px;
+}
+
+#doculli1, #docul4li1 {
+	padding-top: 10px;
+}
+
+#docul4 {
+	position: absolute;
+	width: 270px;
+	margin: 0;
+	padding: 0;
+	z-index: -1;
+	margin-top: -52px;
+	list-style-type:none;
+	transition: all 0.175s ease-in-out;
+	background-color: rgba(255,255,255);
+	border-radius: 0px 0px 5px 5px;
+}
+
+#docul4>li {
+	transition: all 0.175s ease-in-out;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+
+#docul4>li>a {
+	color: #000;
+	text-decoration: none;
+	font-family: 'PT Sans';
+	font-size: 15px;
+	font-weight: 900;
+
+}
+
+#docul4>li:hover {
+	transform: scale(1.05) translateY(1px);
+	
+}
+
+.m1 {
+	position: absolute;
+	z-index: -2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 80vh;
+}
+
+
+.page, .page2 {
+	position: absolute;
+	margin-top: -6px;
+	width: 100%;
+	height: 80vh;
+	z-index: -2;
+	background-image: url(../img/2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter: blur(3px);
+}
+
+.blackcover {
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.page1080, .page10802{
+	position: absolute;
+	z-index: -1;
+	margin: 0;
+	width: 1080px;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.page1080>#t1 {
+	margin-top: 400px;
+	color: white;
+	width: 700px;
+	text-align: center;
+	font-family: 'Montserrat';
+	font-weight: 900;
+	line-height: 175%;
+	font-size: 15px;
+	letter-spacing: 1.25px;
+	z-index: 2;
+}
+
+.m2 {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 80vh;
+	margin-top: 80vh;
+	
+}
+
+.darkblur {
+	position: absolute;
+	filter: blur(1px);
+	background-color: rgba(0,0,0,0.9);
+	width: 100%;
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.page10802>#t2 {
+	position: absolute;
+	color: white;
+	width: 670px;
+	text-align: center;
+	font-family: 'Montserrat';
+	font-weight: 900;
+	line-height: 175%;
+	font-size: 15px;
+	letter-spacing: 1.25px;
+	z-index: 10000;
+}
+
+.hr1 {
+	color:#fff;
+	width: 150px;
+}
+
+footer {
+	border-top: 1px solid red;
+	position: absolute;
+	margin-top: 160vh;
+	width: 100%;
+	height: 30vh;
+	background-color: #555;
+}
