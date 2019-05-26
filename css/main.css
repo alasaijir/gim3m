@@ -5,7 +5,7 @@ body {
 
 header {
 	width: 100%;
-	height: 10vh;
+	height: 75px;
 	background-color: #fff;
 	display: flex;
 	justify-content: center;
@@ -13,7 +13,7 @@ header {
 }
 
 #logo {
-	height: 10vh;
+	height: 75px;
 }
 
 .cen1080 {
@@ -25,11 +25,15 @@ header {
 #logoTxt {
 	font-family: 'PT Sans';
 	letter-spacing: 2px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
 }
 
 nav {
 	height: 75px;
-	background-color: #400000;
+	background: linear-gradient(to right, rgba(60,0,0,1) 0%, rgba(60,0,0,1) 30%, rgba(0,0,0,1) 94%, rgba(0,0,0,1) 100%);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -80,6 +84,7 @@ nav {
 	justify-content: center;
 	align-items: center;
 	padding: 10px;
+	margin: 0;
 }
 
 #docul>li>a{
@@ -141,43 +146,58 @@ nav {
 
 .m1 {
 	position: absolute;
-	z-index: -2;
+	z-index: -10;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 80vh;
+	height: 850px;
 }
 
 
-.page, .page2 {
+.page {
 	position: absolute;
 	margin-top: -6px;
 	width: 100%;
-	height: 80vh;
-	z-index: -2;
-	background-image: url(../img/2.jpg);
+	height: 850px;
+	z-index: -9;
+	background-image: url(../img/23.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	filter: blur(3px);
+	background-position: 50% 30%;
+	filter: blur(4px);
 }
+
 
 .blackcover {
 	position: absolute;
 	background-color: rgba(0,0,0,0.5);
 	width: 100%;
-	height: 80vh;
+	height: 850px;
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: -8;
+}
+
+.page1080{
+	position: absolute;
+	z-index: -7;
+	margin: 0;
+	width: 1080px;
+	height: 850px;
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-.page1080, .page10802{
+.page10802 {
 	position: absolute;
-	z-index: -1;
+	z-index: -7;
 	margin: 0;
 	width: 1080px;
-	height: 80vh;
+	height: 200px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -185,7 +205,7 @@ nav {
 }
 
 .page1080>#t1 {
-	margin-top: 400px;
+	margin-top: 350px;
 	color: white;
 	width: 700px;
 	text-align: center;
@@ -194,7 +214,7 @@ nav {
 	line-height: 175%;
 	font-size: 15px;
 	letter-spacing: 1.25px;
-	z-index: 2;
+	z-index: -4;
 }
 
 .m2 {
@@ -203,23 +223,37 @@ nav {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 80vh;
-	margin-top: 80vh;
+	height: 2000px;
+	margin-top: 850px;
+	z-index: -10;
 	
+}
+
+.page2 {
+	position: absolute;
+	width: 100%;
+	height: 2000px;
+	z-index: -9;
+	filter: blur(2px);
+	background-image: url(../img/u.gif);
+	background-repeat: no-repeat;
+	background-size: 1080px;
+	background-position: 50% 115%;
 }
 
 .darkblur {
 	position: absolute;
-	filter: blur(1px);
-	background-color: rgba(0,0,0,0.9);
+	filter: blur(50px);
 	width: 100%;
-	height: 80vh;
+	height: 2000px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	z-index: -8;
 }
 
 .page10802>#t2 {
+	margin-top: -320px;
 	position: absolute;
 	color: white;
 	width: 670px;
@@ -229,7 +263,7 @@ nav {
 	line-height: 175%;
 	font-size: 15px;
 	letter-spacing: 1.25px;
-	z-index: 10000;
+	z-index: -4;
 }
 
 .hr1 {
@@ -237,11 +271,193 @@ nav {
 	width: 150px;
 }
 
-footer {
+/*footer {
 	border-top: 1px solid red;
 	position: absolute;
 	margin-top: 160vh;
 	width: 100%;
 	height: 30vh;
 	background-color: #555;
+}*/
+
+#li1>a, #li3>a {
+	color: white;
+	font-family: Rubik;
+	text-decoration: none;
+
+}
+
+.page10802 {
+	flex-direction: column;
+	justify-content: space-around;
+	height: 2000px;
+	width: 50vw;
+}
+
+.page10802>div>p {
+	width: 500px;
+	color:white;
+	font-family: 'Montserrat';
+	font-weight: 900;
+	line-height: 175%;
+	font-size: 15px;
+	letter-spacing: 1.25px;
+}
+
+.row1, .row2, .row3, .row4, .row5, .row6 {
+	width: 50vw;
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+}
+
+.row5 {
+	justify-content: center;
+	width: 810px;
+	height: 200px;
+	margin-top: -50px;
+}
+
+.row2 {
+	text-align: right;
+}
+
+.row4 {
+	text-align: center;
+	justify-content: center;
+	width: 900px;
+	
+}
+
+#textfin {
+	width: 900px;
+}
+
+
+.imglist{
+	border-radius:30px;
+	width: 350px;
+	height: 350px;
+	padding: 20px;
+
+}
+
+.hr2 {
+	position: absolute;
+	width: 200px;
+	margin-top: 470px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1080px) {
+	.cen1080, #navbar, .page1080, .page10802 {
+		width: 100%;
+	}
+
+	#navbar>li, #docul, #docul4  {
+		width: 170px;
+	}
+
+	#docul>li,#docul4>li {
+		text-align: center;
+	}
+    
+	#docul {
+		width: 210px;
+		margin-top: -70px;
+	}
+
+	#docul4 {
+		width: 210px;
+		margin-top: -82px;
+	}
+
+}
+
+@media screen and (max-width: 1554px) {
+	.imglist{
+	border-radius: 2px;
+	width: 150px;
+	height: 150px;
+	}
+
+	.page10802>div>p, #t1 {
+		font-size: 12px;
+	}
+
+	.hr2 {
+		margin-top: 290px;
+	}
+
+}
+
+@media screen and (max-width: 1149px) {
+
+	.hr2 {
+		margin-top: 290px;
+	}
+
+	.row4, .row5 {
+		width: 70%;
+	}
+
+}
+
+@media screen and (max-width: 1071px) {
+
+	.hr2 {
+		margin-top: 380px;
+	}
+
+@media screen and (max-width: 1012px) {
+
+	.hr2 {
+		margin-top: 480px;
+	}
+
+
+
+
+
+@media screen and (max-width: 875px) {
+
+	.m2, .page2, .page10802, .darkblur {
+		height: 2500px;
+	}
+
+	.hr2 {
+		margin-top: 550px;
+	}
+
+}
+
+@media screen and (max-width: 840px) {
+
+	.hr2 {
+		margin-top: 650px;
+	}
+
+	#docul4 {
+		width: 203px;
+	}
+}
+
+@media screen and (max-width: 802px) {
+
+	.hr2 {
+		margin-top: 700px;
+	}
+}
+
+@media screen and (max-width: 790px) {
+
+	.hr2 {
+		margin-top: 800px;
+	}
 }
